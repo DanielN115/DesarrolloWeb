@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Local
     "accounts.apps.AccountsConfig",
+    "pages.apps.PagesConfig",
 ]
 AUTH_USER_MODEL = "accounts.CustomUser"
 
@@ -67,6 +68,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+        "DIRS": [BASE_DIR / "templates"],
     },
 ]
 
